@@ -151,3 +151,72 @@ form {
     line-height: 6rem;
     color: var(--color-accent);
 }
+
+.img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.image-section {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+.image-div {
+    margin-top: 2rem;
+}
+
+.image-container {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.underline.story {
+    align-self: center;
+}
+
+@media screen and (min-width:768px) {
+    .image-div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)/repeat(4, 1fr);
+        grid-template-areas: "one one two three" "one one four four" "five six seven seven" "eight nine seven seven";
+        height: 100vh;
+    }
+    .image1 {
+        grid-area: one;
+    }
+    .image2 {
+        grid-area: two;
+    }
+    .image3 {
+        grid-area: three;
+    }
+    .image4 {
+        grid-area: four;
+    }
+    .image5 {
+        grid-area: five;
+    }
+    .image6 {
+        grid-area: six;
+    }
+    .image7 {
+        grid-area: seven;
+    }
+    .image8 {
+        grid-area: eight;
+    }
+    .image9 {
+        grid-area: nine;
+    }
+}
